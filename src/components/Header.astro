@@ -4,18 +4,11 @@ import Documentation from "../pages/Documentation.astro";
 import Faq from "../pages/Faq.astro";
 import Themes from "../pages/Themes.astro";
 import Getallaccess from "../pages/Getallaccess.astro";
-import { Image } from "astro:assets";
-import img1 from "../assets/images/img1.webp";
-import img2 from "../assets/images/img2.webp";
-import img3 from "../assets/images/img3.webp";
+
 ---
 
 <html>
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
     <title>header astro</title>
   </head>
   <body>
@@ -34,12 +27,12 @@ import img3 from "../assets/images/img3.webp";
       <div>
         <span class="flex justify-end items-center space-x-4 text-sm li">
           <a href="/Themes" class="hover:underline text-gray-700">Themes</a>
-          <a href="/Blog" class="hover:underline text-gray-700">Blog</a>
-          <a href="Documentation" class="hover:underline text-gray-700"
+          <a href="https://cosmicthemes.com/blog/" class="hover:underline text-gray-700">Blog</a>
+          <a href="https://cosmicthemes.com/docs/getting-started/" class="hover:underline text-gray-700"
             >Documentation</a
           >
-          <a href="Faq" class="hover:underline text-gray-700">FAQ</a>
-          <a href="/Getallaccess">
+          <a href="https://cosmicthemes.com/all-access/#faq" class="hover:underline text-gray-700">FAQ</a>
+          <a href="https://cosmicthemes.com/all-access/">
             <button
               class="bg-sky-500 text-white px-6 py-3 rounded-full hover:bg-blue-700 text-sm flex items-center justify-center whitespace-nowrap"
             >
@@ -49,7 +42,7 @@ import img3 from "../assets/images/img3.webp";
       </div>
 
       <!-- content and button -->
-      <div
+      <!-- <div
         class="flex flex-col items-center text-center max-w-3xl mx-auto space-y-4 container"
       >
         <p class="first-p">Trusted by hundreds of developers</p>
@@ -77,275 +70,7 @@ import img3 from "../assets/images/img3.webp";
           view Template
         </button>
       </div>
-    </div>
-
-    <!-- middle Section -->
-    <div class="middle-content">
-      <div class="keylink">
-        <p class="text-xl font-medium text-black dark:text-white">astro</p>
-        <p class="text-xl font-medium text-black dark:text-white">talwind</p>
-        <p class="text-xl font-medium text-black dark:text-white">keystatic</p>
-        <p class="text-xl font-medium text-black dark:text-white">netlify</p>
-      </div>
-
-      <!-- card working -->
-      <div>
-        <p class="text-3xl font-bold ft">Featured Themes</p>
-        <!-- <div class="display flex main-card "> -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
-          <div class="card1">
-            <Image src={img1} alt="My Image" width={400} />
-            <h2 class="text-2xl ... mt-4 ml-1">Voyager - $97 $77</h2>
-            <p class="text-lg ... mt-2 ml-1">
-              A modern freelancing and portfolio template design with powerful
-              features
-            </p>
-            <a href="/Themes">
-              <button
-                class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
-             shadow-md transition duration-300 ... mt-2 ml-1"
-                >Theme details</button
-              ></a
-            >
-          </div>
-
-          <div class="card2">
-            <Image src={img2} alt="My Image" class="mt-1" width={400} />
-            <h2 class="text-2xl ... mt-4">Galaxy - $97 $77</h2>
-            <p class="text-lg ... mt-2">
-              A stunning SaaS template featuring unique glow effects and
-              built-in blog
-            </p>
-            <a href="/Themes">
-              <button
-                class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
-              shadow-md transition duration-300 ... mt-2"
-                >Theme details</button
-              ></a
-            >
-          </div>
-
-          <div class="card3">
-            <Image src={img3} alt="My Image" class="mt-1.5" width={400} />
-            <h2 class="text-2xl ... mt-4">Atlas - $97 $77</h2>
-            <p class="text-lg ... mt-2">
-              A fully loaded business template and blog with a modern playful
-              design
-            </p>
-            <a href="/Themes">
-              <button
-                class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
-              shadow-md transition duration-300 ... mt-2"
-                >Theme details</button
-              ></a
-            >
-
-            <a href="/Themes">
-              <p class="text-3xl font-bold ft mt-10">
-                See all themes
-                <i class="fa-solid fa-arrow-right"></i>
-              </p>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- main content -->
-      <div class="main-content">
-        <h1 class="text-2xl pl-6 pt-8 text-blue-900">Key benefits</h1>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-content">
-          <div>
-            <h1 class="text-2xl">Internationalization</h1>
-            <p class="text-lg mt-2">
-              Configure your site for single or multiple languages with a simple
-              script. Plus a language switcher component, helpers to translate
-              routes and text, and more.
-            </p>
-          </div>
-
-          <div>
-            <h1 class="text-2xl">Keystatic CMS</h1>
-            <p class="text-lg mt-2">
-              Allow non-technical editors to easily manage content with this
-              optional git-based CMS, included with premium templates.
-            </p>
-          </div>
-
-          <div>
-            <h1 class="text-2xl">Custom Animations</h1>
-            <p class="text-lg mt-2">
-              Custom scroll-based animations that work with Astro View
-              Transitions. All easily controlled via data attributes.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-content">
-          <div>
-            <h1 class="text-2xl">SEO Optimized</h1>
-            <p class="text-lg mt-2">
-              Optimized for speed and search engines. Built-in image
-              compression, file minification, and relevant SEO meta tags and
-              schema make your website fast and rank well.
-            </p>
-          </div>
-
-          <div>
-            <h1 class="text-2xl">Free Updates</h1>
-            <p class="text-lg mt-2">
-              When you purchase our templates, you'll get free updates for life.
-              All future improvements, bug fixes, and more.
-            </p>
-          </div>
-
-          <div>
-            <h1 class="text-2xl">Unlimited Use</h1>
-            <p class="text-lg mt-2">
-              Use our themes on unlimited personal and commercial products. No
-              attribution required.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- main content2 with references -->
-      <div>
-        <h1 class="text-3xl font-bold tt">Testimonials</h1>
-        <p class="text-5xl bold black text-center mt-4">
-          Hear what others are saying
-        </p>
-
-        <div class="display flex content-section1">
-          <div class="w-100">
-            <h1 class="text-3xl">Geoffrey</h1>
-            <h6 class="text-lg">Founder of Montagne Noire Web Studio</h6>
-            <p class="mt-2 text-sm text-left">
-              Just spinning my first premium cosmic theme, Galaxy, and super
-              impressed with the DX. The readme, the scripts and the tours
-              :chefskiss: Super good job.
-            </p>
-          </div>
-
-          <div class="w-100 content">
-            <h1 class="text-3xl">BowTiedFocus</h1>
-            <h6 class="text-lg">Freelance Web Developer</h6>
-            <p class="mt-2 text-sm text-left">
-              The theme is ridiculously well put together and documented. I
-              learned a ton about Astro engineering by studying it, and I've
-              already used some of the components for my web design clients.
-              Plus, it shaved hours off my dev time so I could focus on writing
-              SEO articles instead of coding something from scratch.
-            </p>
-          </div>
-
-          <div class="w-100">
-            <h1 class="text-3xl">David G</h1>
-            <h6 class="text-lg">Web Developer</h6>
-            <p class="mt-2 text-sm text-left">
-              It's the cleanest template standup experience ever! I've never
-              used Astro, but looking at the demo, code, it should be fairly
-              simple pickup on top of my existing React and NextJS experience
-            </p>
-          </div>
-        </div>
-
-        <div class="display flex content-section2">
-          <div class="w-100">
-            <h1 class="text-3xl">Connor D</h1>
-            <h6 class="text-lg">Developer</h6>
-            <p class="mt-2 text-sm text-left">
-              Cosmic Themes offers more than stunning templates built on a
-              rock-solid Astro foundation—it fosters a vibrant community. With
-              value-added perks like Discord and GitHub invites, Cosmic Themes
-              is a no-brainer for anyone launching a new Astro project.
-            </p>
-          </div>
-
-          <div class="w-100 content">
-            <h1 class="text-3xl">Aniket P</h1>
-            <h6 class="text-lg">Data Scientist</h6>
-            <p class="mt-2 text-sm text-left">
-              I'm not a front-end dev, but I wanted to rebuild my personal site
-              with Astro. If you're in the same shoes, I can't recommend enough
-              Cosmic Themes. The entire process required exactly one CSS change.
-            </p>
-          </div>
-
-          <div class="w-100">
-            <h1 class="text-3xl">Damiano L</h1>
-            <h6 class="text-lg">C++ Developer</h6>
-            <p class="mt-2 text-sm text-left">
-              Cosmic Themes provides some of the best Astro themes out there.
-              They are well designed, easy to customize and, most importantly,
-              the team is very responsive concerning support and feature
-              requests. Using their themes allows you to forget about the design
-              and focus on content creation.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="main-content1">
-        <h1 class="all text-4xl">All Access</h1>
-        <p class="text-xl">
-          Get all existing themes, all new themes, and all future updates. All
-          for a one-time payment. No subscriptions.
-        </p>
-        <div class="flex justify-center">
-          <a href="/Getallaccess">
-            <button
-              class="bg-sky-600 text-white text-lg px-25 py-2 rounded-full mt-5"
-              >Get All Access</button
-            ></a
-          >
-        </div>
-      </div>
-
-      <div class="footer">
-        <h3 class="text-xl">Cosmic Themes</h3>
-        <p>2025 Cosmic Themes. All rights reserved</p>
-
-        <span
-          class="flex justify-end space-x-4 listflex justify-end items-start space-x-8 list"
-        >
-          <div class="list-1">
-            <h1>Navigation</h1>
-            <ul>
-              <li>Themes</li>
-              <li>Blog</li>
-              <li>Documentation</li>
-              <li>FAQ</li>
-            </ul>
-          </div>
-
-          <div class="list-2">
-            <h1>Templates</h1>
-            <ul>
-              <li>All Themes</li>
-              <li>Blog</li>
-              <li>Landing Page</li>
-              <li>Portfolio</li>
-              <li>Small Business</li>
-              <li>SaaS</li>
-              <li>Free</li>
-            </ul>
-          </div>
-
-          <div class="list-3">
-            <h1>Legal</h1>
-            <ul>
-              <li>License</li>
-              <li>Refund policy</li>
-              <li>Terms of use</li>
-              <li>Privacy policy</li>
-              <li>Support</li>
-            </ul>
-          </div>
-        </span>
-      </div>
-
-      
-    </div>
+    </div> -->
+    
   </body>
 </html>

@@ -188,14 +188,16 @@
 
 .footer h3{
     color: white;
-    padding-top: 3rem;
-    padding-left:2rem;
+    padding-top: 3rem; 
+    padding-left:2rem; 
+    padding-right: 11rem;
 }
 
 .footer p{
     color: white;
-    padding-top: 2rem;
-    padding-left:2rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+
 }
 
 .list{
@@ -216,6 +218,38 @@
     padding-right: 3rem;
     padding-bottom: 5rem;
 }
+
+.themehead{
+  background-color:oklch(98.5% 0.001 106.423);
+}
+
+.themehead h3{
+  text-align: center;
+  padding-top: 5rem;
+  color: oklch(82.7% 0.119 306.383);
+}
+
+.themehead h1{
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.themehead p{
+  text-align: center;
+  padding: 1rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.main-btn{
+  text-align: center;
+}
+
+.main-btn button{
+   color: white;
+}
+
+
 
 
   

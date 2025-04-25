@@ -1,7 +1,29 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Maincontent2 from "../components/Maincontent2.astro";
+import Themehead from "../components/Themehead.astro";
+import { Image } from "astro:assets";
+import img1 from "../assets/images/img1.webp";
+import img2 from "../assets/images/img2.webp";
+import img3 from "../assets/images/img3.webp";
+import img4 from "../assets/images/img4.webp";
+import img5 from "../assets/images/img5.webp";
+import img6 from "../assets/images/img6.webp";
+import img7 from "../assets/images/img7.webp";
+import img8 from "../assets/images/img8.webp";
+import img9 from "../assets/images/img9.webp";
+import img10 from "../assets/images/img10.webp";
+import img11 from "../assets/images/img11.webp";
+import img12 from "../assets/images/img12.webp";
+import img13 from "../assets/images/img13.webp";
+import img14 from "../assets/images/img14.webp";
+import img15 from "../assets/images/img15.webp";
 
-BaseLayout
+import "../styles/global.css";
+
+const { h1, p } = Astro.props;
 ---
 
 <html>
@@ -9,10 +31,139 @@ BaseLayout
     <title>themes astro</title>
   </head>
   <body>
-   <h1 style={{backgroundColor:"red" , color: "white"}}>Welcome to Themes</h1>
+    <Header />
+    <Themehead />
+    <Card />
 
-   <!-- <BaseLayout title="theme page">
-        
-  </BaseLayout> -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img4} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Nova - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A colorful SaaS template featuring alternating light and dark sections and a built-in blog"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img5} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Pathfinder - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A unique and powerful documentation template for easy integration with other themes"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img6} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Zenith - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A finance focused SaaS template with stand-out features"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img7} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Amplify - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"Electric SaaS template and blog with unique components and animations"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img8} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Stellar - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A playful small business template for your next client project"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img9} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Quantum - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A tech-themed portfolio template to show off your projects and writing"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img10} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Dawnlight - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A beautiful affiliate and blog theme for Astro featuring a soft color scheme"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img11} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"The Void - $97 $77"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"The sleek blog template to make your writing stand out"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img12} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Blogsmith Pro - $97 $47"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A fully-featured blog theme to help you connect with your audience"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img13} alt="My Image" width={400}/>
+        <h3 class="text-2xl ... mt-4 ml-1">{"Horizon - Free"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A free photography theme for Astro with pricing, portfolios, testimonials, and more"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img14} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Landing Pad - Free"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"Free, Linktree-style landing page template built with Keystatic CMS for easy editing"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img15} alt="My Image" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"Blogsmith Free - Free"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"A free blog theme for Astro to get you up and running"}</p>
+        <button
+        class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+         shadow-md transition duration-300 ... mt-2 ml-1">
+         Theme details</button>     
+      </div>
+    </div>
+
+    <Maincontent2 />
+    <Footer />
   </body>
 </html>

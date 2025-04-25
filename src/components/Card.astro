@@ -1,0 +1,109 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../assets/images/img1.webp";
+import img2 from "../assets/images/img2.webp";
+import img3 from "../assets/images/img3.webp";
+---
+
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+        <title>Card astro</title>
+    </head>
+    <body>
+        <!-- middle Section -->
+        <div class="middle-content">
+            <div class="keylink">
+                <p class="text-xl font-medium text-black dark:text-white">
+                    astro
+                </p>
+                <p class="text-xl font-medium text-black dark:text-white">
+                    talwind
+                </p>
+                <p class="text-xl font-medium text-black dark:text-white">
+                    keystatic
+                </p>
+                <p class="text-xl font-medium text-black dark:text-white">
+                    netlify
+                </p>
+            </div>
+
+            <!-- card working -->
+            <div>
+                <p class="text-3xl font-bold ft">Featured Themes</p>
+                <!-- <div class="display flex main-card "> -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+                    <div class="card1">
+                        <Image src={img1} alt="My Image" width={400} />
+                        <h2 class="text-2xl ... mt-4 ml-1">
+                            Voyager - $97 $77
+                        </h2>
+                        <p class="text-lg ... mt-2 ml-1">
+                            A modern freelancing and portfolio template design
+                            with powerful features
+                        </p>
+                        <a href="/Themes">
+                            <button
+                                class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+           shadow-md transition duration-300 ... mt-2 ml-1"
+                                >Theme details</button
+                            ></a
+                        >
+                    </div>
+
+                    <div class="card2">
+                        <Image
+                            src={img2}
+                            alt="My Image"
+                            class="mt-1"
+                            width={400}
+                        />
+                        <h2 class="text-2xl ... mt-4">Galaxy - $97 $77</h2>
+                        <p class="text-lg ... mt-2">
+                            A stunning SaaS template featuring unique glow
+                            effects and built-in blog
+                        </p>
+                        <a href="/Themes">
+                            <button
+                                class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+            shadow-md transition duration-300 ... mt-2"
+                                >Theme details</button
+                            ></a
+                        >
+                    </div>
+
+                    <div class="card3">
+                        <Image
+                            src={img3}
+                            alt="My Image"
+                            class="mt-1.5"
+                            width={400}
+                        />
+                        <h2 class="text-2xl ... mt-4">Atlas - $97 $77</h2>
+                        <p class="text-lg ... mt-2">
+                            A fully loaded business template and blog with a
+                            modern playful design
+                        </p>
+                        <a href="/Themes">
+                            <button
+                                class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full
+            shadow-md transition duration-300 ... mt-2"
+                                >Theme details</button
+                            ></a
+                        >
+
+                        <a href="/Themes">
+                            <p class="text-3xl font-bold ft mt-10">
+                                See all themes
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
