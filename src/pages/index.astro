@@ -1,11 +1,11 @@
 ---
-import { late } from "astro:schema";
-import BaseLayout from '../layouts/BaseLayout.astro'
-import Contact from './Contact.astro'
-import Services from './Services.astro'
-import About  from './About.astro'
-import slug  from './blog/[slug].astro'
-
+// import { late } from "astro:schema";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import Maincontent1 from "../components/Maincontent1.astro";
+import Maincontent2 from "../components/Maincontent2.astro";
+import Mainslidar from "../components/Mainslidar.astro";
+// import CardDetail from "../components/cardDetail.tsx";
 
 // src/pages/index.astro
 // const name = "bilal";
@@ -17,44 +17,40 @@ import slug  from './blog/[slug].astro'
 //     course:"bscs",
 // }
 
-
 //   console.log(info.name);
-
-
 
 // const res = await fetch("https://fakestoreapi.com/products")
 // const data = await res.json();
-
-
-
 ---
+
 <html>
   <head>
     <title>My Clean Astro Site</title>
   </head>
   <body>
+     
+
+
 
     <!-- <h1>Welcome to My First Astro Project</h1> -->
-     <!-- <p>{name}</p> -->
-     <!-- <p>{obj.name}</p>
+    <!-- <p>{name}</p> -->
+    <!-- <p>{obj.name}</p>
      <p>{obj.age}</p>
      <p>{obj.course}</p> -->
-     <!-- {
+    <!-- {
         info.carName.map(item  => (
           <li>{item}</li>
         ))
      } -->
- 
+
     <!-- {
         data.map(item  => (
             <li>{item.title}</li>
         ))
      } -->
-    
 
-       <BaseLayout title="Home Page"> 
-        <!-- Yahan jo content likhoge, wo BaseLayout ke <slot /> mein render hoga -->
-         <!-- <p>
+    <!-- Yahan jo content likhoge, wo BaseLayout ke <slot /> mein render hoga -->
+    <!-- <p>
         {
             data.map(item => (
                 <li style={{backgroundColor:"blue" , color: "white"}}>{item.title}</li>
@@ -67,15 +63,37 @@ import slug  from './blog/[slug].astro'
               <button class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">
                 Save
               </button> -->
-              
-      </BaseLayout> 
 
-        <!-- <a href="/" class="link">index</a>
+    <!-- <a href="/" class="link">index</a>
         <a href="/About">about</a>
         <a href="/Contact">contact</a>
         <a href="/Services">services</a>
         <a href="/blog/post-1">slug 1</a>
         <a href="/blog/post-2">slug 2</a> -->
-   </body>
+
+        <!-- <script>
+          let userName : string = "bilal";
+          let age : number = 22;
+
+          console.log("userName"  , userName)
+          console.log("age" , age)
+        </script> -->
+
+        <!-- <CardDetail client:load /> -->
+
+    <BaseLayout title="Home Page">
+      <Mainslidar />
+      <Card />
+      <Maincontent1 />
+      <Maincontent2 />
+    </BaseLayout>
+
+
+    
+  </body>
 </html>
+
+
+
+
 

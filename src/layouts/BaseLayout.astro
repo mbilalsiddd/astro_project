@@ -1,11 +1,9 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro'; 
-import Card from '../components/Card.astro'; 
-import Maincontent1 from '../components/Maincontent1.astro'; 
-import Maincontent2 from '../components/Maincontent2.astro'; 
-import Mainslidar from '../components/Mainslidar.astro'; 
 import "../styles/global.css";
+
+
 
 const { title = "Default Title" } = Astro.props;  
 ---
@@ -18,13 +16,16 @@ const { title = "Default Title" } = Astro.props;
   </head>
   <body>
     <Header />  
+    
     <main>
-      <Mainslidar/>
-      <Card/>
-      <Maincontent1/> 
-      <Maincontent2/> 
+      <slot/>
     </main>
 
     <Footer />  
   </body>
 </html>
+
+
+
+
+

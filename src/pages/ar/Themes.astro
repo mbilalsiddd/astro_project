@@ -1,0 +1,160 @@
+---
+import Card from "../../components/Card.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Maincontent2 from "../../components/Maincontent2.astro";
+import Themehead from "../../components/Themehead.astro";
+import { Image } from "astro:assets";
+import img1 from "../../assets/images/img1.webp";
+import img2 from "../../assets/images/img2.webp";
+import img3 from "../../assets/images/img3.webp";
+import img4 from "../../assets/images/img4.webp";
+import img5 from "../../assets/images/img5.webp";
+import img6 from "../../assets/images/img6.webp";
+import img7 from "../../assets/images/img7.webp";
+import img8 from "../../assets/images/img8.webp";
+import img9 from "../../assets/images/img9.webp";
+import img10 from "../../assets/images/img10.webp";
+import img11 from "../../assets/images/img11.webp";
+import img12 from "../../assets/images/img12.webp";
+import img13 from "../../assets/images/img13.webp";
+import img14 from "../../assets/images/img14.webp";
+import img15 from "../../assets/images/img15.webp";
+import "../../styles/global.css";
+
+
+
+
+
+const { h1, p } = Astro.props;
+---
+
+<html lang="ar" dir="rtl">
+  <head>
+    <title>ثيمات أسترو</title>
+  </head>
+  <body>
+  
+    <BaseLayout title="صفحة السمة">
+    <Themehead />
+    <Card />
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img4} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"نوفا - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب SaaS ملون يتميز بأقسام فاتحة ومظلمة ومدونة مدمجة"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img5} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"باثفايندر - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب توثيق فريد وقوي يمكن دمجه بسهولة مع قوالب أخرى"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img6} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"زنيث - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب SaaS مالي يتميز بخصائص رائعة"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img7} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"أمبليفي - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب SaaS كهربائي ومدونة مع مكونات وحركات فريدة"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img8} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"ستيلار - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب عمل صغير ممتع لمشروعك القادم"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img9} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"كوانتوم - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب محفظة تقنية لعرض مشاريعك وكتاباتك"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img10} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"دونلايت - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب تابع ومدونة جميلة مع ألوان ناعمة"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img11} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"ذا فويد - ٩٧$ ٧٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب مدونة أنيق لعرض كتاباتك بشكل لافت"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img12} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"بلوغسميث برو - ٩٧$ ٤٧$"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب مدونة كامل الميزات يساعدك على التواصل مع جمهورك"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 main-card">
+      <div class="card1">
+        <Image src={img13} alt="صورتي" width={400}/>
+        <h3 class="text-2xl ... mt-4 ml-1">{"هورايزون - مجاني"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب تصوير فوتوغرافي مجاني مع أسعار، محافظ أعمال، شهادات والمزيد"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img14} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"لاندينج باد - مجاني"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب صفحة هبوط مجاني بأسلوب Linktree مبني باستخدام Keystatic CMS للتعديل السهل"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+
+      <div class="card1">
+        <Image src={img15} alt="صورتي" width={400} />
+        <h3 class="text-2xl ... mt-4 ml-1">{"بلوغسميث فري - مجاني"}</h3>
+        <p class="text-lg ... mt-2 ml-1">{"قالب مدونة مجاني لبدء رحلتك مع أسترو"}</p>
+        <button class="bg-sky-500 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ... mt-2 ml-1">
+          تفاصيل الثيم
+        </button>     
+      </div>
+    </div>
+
+    <Maincontent2 />
+  </BaseLayout>
+  </body>
+</html>

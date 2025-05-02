@@ -1,0 +1,52 @@
+---
+import CardDetail from "../../components/cardDetail"
+import BaseLayout from "../../layouts/BaseLayout.astro"
+// import CardDetail from "../components/cardDetail"
+// import BaseLayout from "../layouts/BaseLayout.astro"
+
+---
+
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>الأسئلة الشائعة - أسترو</title>
+  </head>
+  <body>
+    <BaseLayout title="صفحة الأسئلة الشائعة">
+
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6 main-card card-container'>
+        <CardDetail
+          imgsrc="https://wallpapers.com/images/featured/theme-pictures-k9nrpu29g9no4w49.jpg"
+          title="داكن"
+          desc=""
+        />
+        <CardDetail
+          imgsrc="https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?cs=srgb&dl=pexels-sebastiaan9977-1480690.jpg&fm=jpg"
+          title="مطاردة لأجل البرية"
+          desc=""
+        />
+        <CardDetail
+          imgsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMPSk25qB1_xgqXrex-Rfcd8Ndqqx8Yn0h9g&s"
+          title="مادباوند"
+          desc=""
+        />
+        <CardDetail
+          imgsrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZmjJhRuz7bC6i3zGLrBrcf77Bzj73noTZPw&s"
+          title="بادينغتون"
+          desc=""
+        />
+        <CardDetail
+          imgsrc="https://www.shutterstock.com/image-vector/futuristic-robot-interacting-digital-data-260nw-2500204599.jpg"
+          title="لقد فقدت جسدي"
+          desc=""
+        />
+        <CardDetail
+          imgsrc="https://plus.unsplash.com/premium_photo-1686208218551-64c4243ccd2f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGFyayUyMHRoZW1lfGVufDB8fDB8fHww"
+          title="أعظم ليلة في البوب"
+          desc=""
+        />
+      </div>
+
+    </BaseLayout>
+  </body>
+</html>

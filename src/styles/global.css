@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 
- .head {
+.head {
     text-align: center;
     background-color: oklch(82.7% 0.119 306.383);
     color: white;
@@ -247,6 +247,11 @@
 
 .main-btn button{
    color: white;
+}
+
+.found{
+  text-align: center;
+  align-items: center;
 }
 
 

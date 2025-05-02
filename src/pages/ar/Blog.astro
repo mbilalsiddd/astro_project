@@ -1,0 +1,54 @@
+---
+// import Themehead from "../components/Themehead.astro";
+// import BaseLayout from "../layouts/BaseLayout.astro";
+import Themehead from "../../components/Themehead.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import "../../styles/global.css";
+
+
+let data;
+try {
+  const res = await fetch("https://fakestoreapi.com/products");
+  data = await res.json();
+  console.log("data ==>", data);
+} catch (error) {
+  console.log("error ==>", error);
+}
+---
+
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>مدونة أسترو</title>
+  </head>
+  <body>
+    <BaseLayout title="صفحة المدونة">
+      <Themehead />
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {
+          data.map((item) => (
+            <div class="flex flex-col justify-between border p-4 rounded shadow m-3">
+              <div>
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  width="150"
+                  height="50"
+                  class="w-full h-48 object-contain"
+                />
+                <h3 class="text-lg font-semibold mt-2">{item.title}</h3>
+              </div>
+
+              <a href={`/ViewDetail/${item.id}`} class="mt-5">
+                <button class="w-full bg-sky-500 text-white py-2 rounded-full hover:bg-blue-700 text-sm text-center">
+                  عرض التفاصيل
+                </button>
+              </a>
+            </div>
+          ))
+        }
+      </div>
+    </BaseLayout>
+  </body>
+</html>
